@@ -1,0 +1,472 @@
+@media (max-width:2000px) {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .menu h2 {
+      color: white;
+      font-size: 50px;
+    }
+  
+    .absection {
+      display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 20px;
+    }
+  
+    .fmission h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      border-bottom: grey 2px solid;
+    }
+  
+    .fmission img {
+      width: 80px;
+      width: 80px;
+    }
+  
+    .fmission {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+    }
+  
+    .abouts {
+      display: grid;
+      grid-template-columns: max-content;
+    }
+  
+    .fvission h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      border-bottom: grey 2px solid;
+    }
+  
+    .fvission img {
+      display: bl;
+      position: relative;
+      align-items: center;
+      width: 80px;
+      width: 80px;
+    }
+  
+  
+    .fvission {
+      margin-top: 40px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .abouts {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .abouts h1 {
+      color: #4D4E58;
+      font-size: 50px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+    .abts {
+      display: grid;
+    }
+  
+    .abouts p {
+      font-size: 30px;
+    }
+  
+    .achives {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: black;
+      padding: 20px 0;
+    }
+  
+    .archv {
+      display: flex;
+    }
+  
+    .mnachv h1 {
+      font-size: 80px;
+      border-bottom: 2px grey solid;
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  
+    .achives .fst h1 {
+      color: white;
+      font-size: 50px;
+      font-family: 'Courier New', Courier, monospace;
+      transition: all 0.8s;
+    }
+  
+    .fst {
+      width: -webkit-fill-available;
+      background: #8C93E4;
+      margin: 20px;
+      border-radius:05%;
+      padding-right: 9px;
+      padding-left: 9px;
+    }
+  
+    /* .solutions {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    } */
+  
+    .solutions img {
+      float: center;
+    }
+  
+    .copyset {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+    }
+  
+    .let h1 {
+      font-size: 70px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+    .set {
+      display: flex;
+      border: 1px solid grey;
+      margin: 10px;
+      padding-bottom: 30px;
+      overflow: scroll;
+      scroll-snap-type-y: mandatory;
+      transition: all 0.9s ease-in;
+    }
+  
+    .set p,.solutions p{
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  
+    #slidbtn {
+      position: relative;
+      top: -32px;
+      padding: 0 60px;
+    }
+  
+    #slidbtn img:hover {
+  
+      background-color: black;
+      border-radius: 50%;
+      transition: all 0.9s;
+  
+    }
+  
+    #slidbtn img {
+      margin: 0 20px;
+      background: white;
+  
+    }
+  
+    .slid {
+      display: grid;
+      width: 100vw;
+      margin: 0 40px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      scroll-snap-align: start;
+      transition: all 0.7s;
+    }
+  
+  
+  
+    .slider {
+      position: relative;
+      top: -20px;
+      transition: all 0.7s;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .slider span {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      margin: 0 20px;
+      border: 4px solid rgb(29, 202, 215);
+      border-radius: 50%;
+      transition: all 0.7s;
+    }
+  
+    .slider span:hover {
+  
+      padding: 5px;
+  
+    }
+  
+    .review {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: black;
+  
+    }
+  
+    .review h1 {
+      color: white;
+    }
+  
+  
+    .review .rew .smrew {
+      width: 180px;
+      height: 180px;
+      transition: left 0.9s;
+      border: 1px solid white;
+      border-radius: 50%;
+  
+    }
+  
+    .review .rew .msgrwv img {
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: none;
+    }
+  
+    .reviewslid {
+      position: relative;
+      top: -20px;
+      transition: all 0.7s;
+    }
+  
+    .reviewslid span:hover {
+      background: white;
+      padding: 5px;
+    }
+  
+    #reviewbtn {
+      position: relative;
+      top: -32px;
+      padding: 0 60px;
+    }
+  
+    #reviewbtn img:hover {
+      background: white;
+      border-radius: 50%;
+      transition: all 0.9s;
+    }
+  
+    #reviewbtn img {
+      height: 40px;
+      width: 40px;
+      margin: 0 20px;
+      background: black;
+    }
+  
+    .msgrwv {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .msgrwv img {
+      border-radius: 10px 10px 0 0;
+      background: #9499D3;
+    }
+  
+    .msgrwv p {
+      background: #9499D3;
+      padding: 10px;
+    }
+  
+    /* .prfl {
+      display: grid;
+      width: 100vw;
+      margin: 0 40px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      scroll-snap-align: start;
+      transition: all 0.7s;
+    } */
+  
+    /* .profile {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+      border-bottom: 4px solid gray;
+      background-color: black;
+      padding: 20px;
+  
+    } */
+  
+    .jet {
+      display: inline-block;
+      border: 2px solid grey;
+      background: url(images32.jpeg)repeat center;
+      height: 400px;
+    }
+  
+    .profile h1 {
+      font-size: 40px;
+      color: white;
+    }
+  
+    .prfl {
+      width: 800px;
+      height: 500px;
+      margin: auto;
+    }
+  
+    .prfl p {
+      font-size: 30xpx;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  
+    .prfl img {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  
+    #prflbtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 0px;
+      margin: 20px
+    }
+  
+    #prflbtn img:hover {
+      background: white;
+      border-radius: 50%;
+      transition: all 0.9s;
+    }
+  
+    #prflbtn img {
+      height: 35px;
+      width: 35px;
+      margin: 0 20px;
+      background: transparent;
+    }
+  
+    .profileslid {
+      margin: 15px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+  
+    }
+  
+    .profileslid span {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      margin: 0 10px;
+      border: 4px solid rgb(54, 140, 238);
+      border-radius: 50%;
+      transition: all 0.7s;
+    }
+  
+    .profileslid span:hover {
+  
+      padding: 5px;
+    }
+  
+    .profile .hedimg {
+      width: 50px;
+      height: 30px;
+    }
+  
+    .solutions .hedimg {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .solutions .slid img {
+      width: 650px;
+      height: 450px;
+    }
+  
+    .review .hedimg {
+      width: 80px;
+      height: 50px;
+    }
+  
+    .achives .hedimg {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .optn {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.7s;
+      background: none;
+      background: black;
+  
+    }
+  
+    .onces {
+      display: grid;
+      position: relative;
+      bottom: -85px;
+      z-index: 1;
+      transition: all 0.9s;
+  
+    }
+  
+    .optn a {
+      font-size: 15px;
+      position: relative;
+      top: 10px;
+  
+    }
+  
+    .menu a:hover>.optn {
+      visibility: visible;
+      opacity: 1;
+      top: -30px;
+      transition: 0.6s all;
+  
+    }
+  
+    .btnimgs {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .secondcnt {
+      background: #676b91;
+  
+    }
+  
+    .copyset {
+      display: flex;
+    }
+  
+    .copyset p {
+      margin: 0 10px;
+    }
+  
+    .otnimg {
+      width: 20px;
+      height: 20px;
+      padding: 0 5px;
+    }
+  }

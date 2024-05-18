@@ -1,0 +1,988 @@
+body {
+  font-size: 15pt;
+  margin: 5px 10px;
+  zoom: 100%;
+  padding: 0;
+  margin: 0;
+}
+.firstcnt{
+  background: #676B91;
+}
+.firstline{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.firstline img{
+  margin-left: 25px;
+  margin-right: 5px;
+}
+.firstline p{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.secondline{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.secondline img{
+  margin-left: 25px;
+}
+.secondline button{
+  margin: 10px;
+  font-size: 20px;
+  position: absolute;
+  top: 65px;
+  right:10px;
+  border: white solid 2px;
+  border-radius: 10px;
+  background: #7673B6;
+  box-shadow: 0 0 10px #fff;
+  font-size: 35px;
+}
+.menu {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  line-height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.conatianer.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  background: transparent;
+  margin-bottom: 10px;
+}
+.menu a {
+  position: relative;
+  top: -20px;
+  right: 0;
+  color: #8990D7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+.menu label {
+  font-size: 40px;
+  font-weight: bold;
+  color: #8990D7;
+}
+
+.imgzm {
+  width: 150px;
+  height: 150px;
+  min-width: 80px;
+  min-height: 80px;
+  position:relative;
+  top: 20px;
+  border-radius: 75px;
+  border: 1px solid black;
+}
+
+.imgzm:hover {
+  position: fixed;
+  max-width: 550px;
+  max-height: 550px;
+  width: 550px;
+  height: 550px;
+  right: 30%;
+  top: 15%;
+  border-radius: none;
+  z-index: 123;
+  transition: all 0.6s ease-in;
+}
+
+.showmenu {
+  transition: 0.7s;
+  cursor: pointer;
+  display: none
+}
+.hidemenu {
+    transition: 0.7s;
+    font-size: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu a:hover,
+.showmenu:hover,
+.hidemenu:hover {
+  color: #CD89D7;
+}
+
+
+
+#chk {
+  position: absolute;
+  display: none;
+  z-index: -11;
+}
+
+@media screen and (max-width:1000px) {
+  
+  .showmenu,
+  .hidemenu {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    line-height: normal;
+    top: -20px;
+    width: 80%;
+    height: 100vh;
+    min-height: 100%;
+    background-color: rgba(000, 000, 000, 0.7);
+    right: -100%;
+    text-align: center;
+    padding: 60px 0 60px 0;
+    transition: all 0.7s;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    align-items: center;
+    overflow-y: scroll;
+  }
+
+  .conatianer {
+    display: flex;
+    padding: 20px;
+  }
+
+  .menubar {
+    display: grid;
+  }
+
+  .menu a {
+    display: block;
+    padding: 40px;
+    font-size: 40px;
+    position: relative;
+    top: -20px;
+    right: 0;
+    color: #8990D7;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 0 20px;
+  }
+
+  .menu h2 {
+    display: none;
+    color: white;
+    font-size: 50px;
+  }
+
+  .imgzm {
+    width: 250px;
+    height: 250px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 75px;
+    border: 1px solid black;
+  }
+
+  .showmenu {
+    line-height: 50px;
+    font-size: 55px;
+    padding: 10px 20px;
+    margin: 10px;
+    position: absolute;
+    right: 10px;
+    font-weight: bolder;
+    color: white;
+    border: 1px solid #8990D7;
+    background-color: #8990D7;
+    border-radius: 5px;
+  }
+
+
+
+  .hidemenu {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    font-size: 50px;
+    transform: rotate(90deg);
+    color: gray;
+  }
+
+  .menubar ul li:hover>ul {
+    top: 0px;
+    opacity: 1;
+    visibility: visible;
+    display: grid;
+    transition: .3s linear;
+  }
+
+  .menu li {
+    display: grid;
+  }
+
+  .menubar ul ul {
+    position: relative;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    border-top: 3px solid #23dbdb;
+    border-bottom: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+
+  .menubar ul ul li {
+    width: 100%;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+
+  
+  .menubar ul ul ul {
+    border: 5px solid white;
+
+  }
+
+  .menubar ul li a {
+    background: none;
+  }
+
+
+  #chk:checked~.menu {
+    right: 0%;
+  }
+
+  .conatianer.active {
+    position: fixed;
+    right: 0;
+    margin-top: 50px;
+    padding: 10px;
+    background: none;
+  }
+
+.absection{
+ padding: 20px;
+}
+.fmission h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.fmission{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+}
+.fmission p{
+  font-size: 40px;
+}
+.fvission h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.fvission img{
+  display: bl;
+  position: relative;
+  align-items: center;
+  
+}
+.fvission{
+  margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.fvission p{
+  font-size: 40px;
+}
+.abouts{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.abouts h1{
+  color: #4D4E58;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.achives{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: black;
+}
+.mnachv h1{
+  font-size: 80px;
+  border-bottom: 2px grey solid;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.achives .fst h1{
+  color: white;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 0.8s;
+}
+.fst {
+  width: 80vw;
+  background: #8C93E4;
+  margin: 20px;
+}
+.solutions{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.solutions img{
+  float: center;
+}
+.copyset{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.copyset p {
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+}
+.let h1{
+  font-size: 70px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.set{
+  display: flex;
+  border: 1px solid grey;
+  margin: 10px;
+  padding-bottom: 30px;
+  overflow: scroll;
+  scroll-snap-type-y:mandatory;
+  transition: all 0.9s ease-in;
+}
+.set p{
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.review #slidbtn{
+  position: relative;
+  top: -44px;
+  padding: 0 60px;
+}
+.review #slidbtn img:hover{
+  background: white;
+  border-radius: 50%;
+  transition: all 0.9s;
+}
+.review #slidbtn img{
+  margin: 0 20px;
+  background: black;
+  border-radius: 50%;
+}
+
+
+#slidbtn{
+  position: relative;
+  top: -44px;
+  padding: 0 60px;
+}
+#slidbtn img:hover{
+  background: black;
+  border-radius: 50%;
+  transition: all 0.9s;
+}
+#slidbtn img{
+  margin: 0 20px;
+  background: white;
+  border-radius: 50%;
+}
+.slid{
+  display: grid;
+  width: 100vw;
+  margin: 0 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: all 0.7s;
+}
+.slid img{
+  width: 70vw;
+  height: 20vh;
+  
+}
+.slider {
+  position: relative;
+  top: -20px;
+  transition: all 0.7s;
+}
+.slider span{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 0 20px;
+  border: 4px solid darkgray;
+  border-radius: 20%;
+  transition: all 0.7s;
+}
+.slider span:hover{
+  background: black;
+  padding: 5px;
+   
+}
+.review {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: black ;
+}
+.review h1{
+  color: white;
+}
+.rev{
+  display: grid;
+  width: 100vw;
+  margin: 0 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: all 0.7s;
+}
+.review .rev img{
+  width: 80px;
+  height: 80px;
+  transition:left 0.9s;
+}
+.reviewslid {
+  position: relative;
+  top: -20px;
+  transition: all 0.7s;
+}
+.reviewslid span{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 0 20px;
+  border: 4px solid darkgray;
+  border-radius: 20%;
+  transition: all 0.7s;
+}
+.reviewslid span:hover{
+  background: white;
+  padding: 5px;
+}
+.msgrwv{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.msgrwv img{
+  border-radius: 10px 10px 0 0;
+  background: #9499D3;
+}
+.msgrwv p{
+  background: #9499D3;
+  padding: 10px;
+}
+.prfl{
+  display: grid;
+  width: 100vw;
+  margin: 0 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: all 0.7s;
+}
+.profile{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 4px solid gray;
+  background: black;
+  padding: 20px;
+}
+.jet{
+  display: flex;
+  border: 2px solid grey;
+  background: url(images32.jpeg)repeat center ;
+}
+.profile h1{
+  color: white;
+}
+.prfl{
+  width: 800px;
+  height: 500px;
+}
+.prfl p{
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.prfl img{
+background-color: rgba(255, 255, 255, 0.6);
+}
+#prflbtn{
+  position: relative;
+  top: 0px;
+  margin: 20px
+}
+#prflbtn img:hover{
+  background: white;
+  border-radius: 50%;
+  transition: all 0.9s;
+}
+#prflbtn img{
+  width: 70px;
+  height: 70px;
+  margin: 0 20px;
+  background: transparent;
+}
+.profileslid{
+  margin: 15px 0;
+}
+.profileslid span{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 0 30px;
+  border: 4px solid darkgray;
+  border-radius: 20%;
+  transition: all 0.7s;
+}
+.profileslid span:hover{
+  background: black;
+  padding: 5px;
+}
+.profile .hedimg{
+  width:90px;
+  height: 50px;
+}
+.solutions .hedimg{
+  width: 100px;
+  height: 100px;
+}
+.review .hedimg{
+  width:80px ;
+  height: 50px;
+}
+.achives .hedimg{
+  width:80px;
+  height: 80px;
+}
+.optn{
+  display: none;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  transition: 0.7s;
+}
+.optn a{
+  font-size: 32px;
+  color: #C2A5E3;
+  
+}
+#atn1:hover~.one{
+  display: block;
+}
+#atn2:hover~.two {
+  display: block;
+}
+#atn3:hover~.three {
+  display: block;
+}
+#atn4:hover~.four {
+  display: block;
+}
+#atn5:hover~.five {
+  display: block;
+}
+#atn6:hover~.six {
+  display: block;
+}
+
+
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width :4000){
+  .menu h2 {
+    color: white;
+    font-size: 50px;
+  }
+.absection{
+ padding: 20px;
+}
+.fmission h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.fmission{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+}
+.fmission p{
+  font-size: 40px;
+}
+.fvission h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.fvission img{
+  display: bl;
+  position: relative;
+  align-items: center;
+  
+}
+.fvission{
+  margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.fvission p{
+  font-size: 40px;
+}
+.abouts{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.abouts h1{
+  color: #4D4E58;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.achives{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: black;
+}
+.mnachv h1{
+  font-size: 80px;
+  border-bottom: 2px grey solid;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.achives .fst h1{
+  color: white;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 0.8s;
+}
+.fst {
+  width: 80vw;
+  background: #8C93E4;
+  margin: 20px;
+}
+.solutions{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.solutions img{
+  float: center;
+}
+.copyset{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.let h1{
+  font-size: 70px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.set{
+  display: flex;
+  border: 1px solid grey;
+  margin: 10px;
+  padding-bottom: 30px;
+  overflow: scroll;
+  scroll-snap-type-y:mandatory;
+  transition: all 0.9s ease-in;
+}
+.set p{
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.review #slidbtn{
+  position: relative;
+  top: -44px;
+  padding: 0 60px;
+}
+.review #slidbtn img:hover{
+  background: white;
+  border-radius: 50%;
+  transition: all 0.9s;
+}
+.review #slidbtn img{
+  margin: 0 20px;
+  background: black;
+  border-radius: 50%;
+}
+
+
+#slidbtn{
+  position: relative;
+  top: -44px;
+  padding: 0 60px;
+}
+#slidbtn img:hover{
+  background: black;
+  border-radius: 50%;
+  transition: all 0.9s;
+}
+#slidbtn img{
+  margin: 0 20px;
+  background: white;
+  border-radius: 50%;
+}
+.slid{
+  display: grid;
+  width: 100vw;
+  margin: 0 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: all 0.7s;
+}
+.slid img{
+  width: 90vw;
+  
+}
+.slider {
+  position: relative;
+  top: -20px;
+  transition: all 0.7s;
+}
+.slider span{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 0 20px;
+  border: 4px solid darkgray;
+  border-radius: 20%;
+  transition: all 0.7s;
+}
+.slider span:hover{
+  background: black;
+  padding: 5px;
+   
+}
+.review {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: black ;
+}
+.review h1{
+  color: white;
+}
+.rev{
+  display: grid;
+  width: 100vw;
+  margin: 0 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: all 0.7s;
+}
+.review .rev img{
+  width: 80px;
+  height: 80px;
+  transition:left 0.9s;
+}
+.reviewslid {
+  position: relative;
+  top: -20px;
+  transition: all 0.7s;
+}
+.reviewslid span{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 0 20px;
+  border: 4px solid darkgray;
+  border-radius: 20%;
+  transition: all 0.7s;
+}
+.reviewslid span:hover{
+  background: white;
+  padding: 5px;
+}
+.msgrwv{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.msgrwv img{
+  border-radius: 10px 10px 0 0;
+  background: #9499D3;
+}
+.msgrwv p{
+  background: #9499D3;
+  padding: 10px;
+}
+.prfl{
+  display: grid;
+  width: 100vw;
+  margin: 0 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: all 0.7s;
+}
+.profile{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 4px solid gray;
+  background: black;
+  padding: 20px;
+}
+.jet{
+  display: flex;
+  border: 2px solid grey;
+  background: url(images32.jpeg)repeat center ;
+}
+.profile h1{
+  color: white;
+}
+.prfl{
+  width: 800px;
+  height: 500px;
+}
+.prfl p{
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.prfl img{
+background-color: rgba(255, 255, 255, 0.6);
+}
+#prflbtn{
+  position: relative;
+  top: 0px;
+  margin: 20px
+}
+#prflbtn img:hover{
+  background: white;
+  border-radius: 50%;
+  transition: all 0.9s;
+}
+#prflbtn img {
+  height: 40px;
+  width: 40px;
+  margin: 0 20px;
+  background: transparent;
+}
+.profileslid{
+  margin: 15px 0;
+}
+.profileslid span{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 0 30px;
+  border: 4px solid darkgray;
+  border-radius: 20%;
+  transition: all 0.7s;
+}
+.profileslid span:hover{
+  background: black;
+  padding: 5px;
+}
+.profile .hedimg{
+  width:90px;
+  height: 50px;
+}
+.solutions .hedimg{
+  width: 100px;
+  height: 100px;
+}
+.review .hedimg{
+  width:80px ;
+  height: 50px;
+}
+.achives .hedimg{
+  width:80px;
+  height: 80px;
+}
+.optn{
+  display: none;
+  transition: 0.7s;
+}
+.optn a{
+  font-size: 30px;
+}
+#atn1:hover~.one{
+  display: grid;
+}
+#atn2:hover~.two {
+  display: block;
+}
+#atn3:hover~.three {
+  display: block;
+}
+#atn4:hover~.four {
+  display: block;
+}
+#atn5:hover~.five {
+  display: block;
+}
+#atn6:hover~.six {
+  display: block;
+}
+
+
+}

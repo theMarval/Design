@@ -1,0 +1,64 @@
+
+.mainctn{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+  background-image: linear-gradient(45deg,#9AEF2FFa,#A9D473FA,#436B10FA);
+}
+.contact{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+.contactfrt{
+  display: flex;
+  
+}
+.contact p{
+  font-size: 50px;
+ margin-bottom: 60px;
+margin-left: 20px;
+}
+
+.calldiv, .maildiv{
+  display: flex;
+  align-items: center;
+  padding:0px 15px;
+  border: #23dbdb 2px solid;
+  margin: 0px 20px;
+  width: 40vw;
+}
+.maildiv{
+  display: flex;
+  align-items: center;
+  padding:0 30px;
+  margin: 20px 0;
+}
+.contactscnd{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin:20px 0;
+}
+.contactscnd img{
+  margin: 0 10px;
+}
+.inform p{
+  color: #FFFF00;
+}
+a{
+  text-decoration: none;
+}
+@media (max-width: 1000px){
+  .contactfrt{
+    display: grid;
+  }
+  .calldiv, .maildiv{
+    width: 80vw;
+    margin:  20px 0;
+    padding:0 30px;
+  }
+}

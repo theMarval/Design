@@ -1,0 +1,81 @@
+body {
+  background: white;
+}
+
+.cment {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #D7D8DE;
+}
+
+.allreview {
+  display: block;
+  user-select: none;
+}
+
+.tworeview {
+  display: flex;
+}
+
+.wtreview {
+  display: block;
+  align-content: center;
+  padding: 20px;
+  border: Lightgrey solid 2px;
+  margin: 15px;
+
+}
+
+.allfirstline {
+  display: flex;
+
+}
+
+.allfirstline h2,
+.allfirstline img {
+  padding: 10px 20px;
+}
+
+.allfirstline h2 {
+  display: flex;
+  position: relative;
+  top: 5px;
+  font-size: 40px;
+}
+
+.allfirstline img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.grreview {
+  display: grid;
+  align-content: center;
+  padding: 20px;
+  border: Lightgrey solid 2px;
+  margin: 15px;
+  background: lightgrey;
+}
+
+.allreview p {
+  font-size: 25px;
+}
+
+.wtreview:hover {
+  box-shadow: 0 0 25px #23dbdb;
+  padding: 30px;
+
+}
+
+.grreview:hover {
+  box-shadow: 0 0 25px #23dbdb;
+  padding: 30px;
+}
+
+@media(max-width: 1000px) {
+  .tworeview {
+    display: block;
+  }
+}
