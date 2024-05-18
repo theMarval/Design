@@ -1,8 +1,11 @@
-
-
 @media (max-width:1000px) {
     body{
-      width: fit-content;
+      width: auto;
+      
+    }
+    p{
+      text-wrap: wrap;
+      font-size: 15px;
     }
     .mainloader{
       width: 100%;
@@ -10,7 +13,7 @@
     }
     nav {
       display: grid;
-      height: 1px;
+      width: 100vw;
     }
     #navr{
       padding: 10px;
@@ -22,12 +25,13 @@
     }
   
     .firstcnt {
-      display: grid;
-      padding: 20px 0;
+      display: flex;
+      justify-content: start;
     }
   
     .firstcnt p {
-      font-size: 35px;
+      font-size: 15px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
   
     .secondcnt {
@@ -44,7 +48,7 @@
       position: fixed;
       line-height: normal;
       top: -20px;
-      width: 80%;
+      width: 70%;
       height: auto;
       background-color: rgb(103 107 145 / 75%);
       border: 2px white solid;
@@ -66,7 +70,11 @@
       right: 0%;
       transition: all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
-  
+    .conatianer {
+      padding: 10px;
+      z-index: 2;
+      margin: -4px;
+    }
     .conatianer.active {
       position: fixed;
       top: 0px;
@@ -74,21 +82,15 @@
       padding: 10px;
       background: none;
       z-index: 2;
-      transition: all 0.2s;
       backdrop-filter: blur(1px);
-      padding: 10px 0;
-      background: #676b91;
+      background: #063247;
     }
-  
-    .conatianer {
-      display: block;
-      padding: 20px;
-    }
+    
   
     .menu a {
       display: grid;
-      padding: 40px;
-      font-size: 40px;
+      padding: 8px;
+      font-size: 25px;
       text-decoration: none;
     }
   
@@ -163,9 +165,9 @@
     }
   
     .showmenu {
-      line-height: 30px;
-      font-size: 35px;
-      padding: 10px 10px;
+      /* line-height: 30px;
+      font-size: 35px; */
+      padding: 5px 5px;
       margin-top: 20px;
       margin: 10px;
       position: absolute;
@@ -179,19 +181,20 @@
   
     .hidemenu {
       position: fixed;
-      top: 40px;
-      right: 65px;
+      top: 20px;
+      right: 20px;
       font-size: 50px;
       transform: rotate(90deg);
       color: gray;
     }
     
     .maindetails{
-      display: flex;
+      display: block;
       flex-direction: column;
-      margin-top: 40px;
+      margin-top: 10px;
     }
     .firstline{
+      display: block;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -210,9 +213,9 @@
     }
     .otnimg{
       position: relative;
-      top: -130%;
-      width: 35px;
-      height: 35px;
+      top: -200%;
+      width: 20px;
+      height: 20px;
     }
     .jet{
       overflow: hidden;
@@ -221,9 +224,68 @@
       display: block;
       height: auto;
     }
-    .fst{
+    .achives .fst h1{
+      font-size: 30px;
+    }
+    .absection{
+      flex-direction: column;
+      padding: 10px;
+    }
+    #na#navr .cname a{
+      font-size: 15px;
+    }
+    .showmenu img{
+      width: 25px;
+      height: 25px;
+    }
+    .prfl{
       width: auto;
     }
+    .prfl button,.prfl p{
+      font-size: 20px;
+    }
+    #prflbtn {
+      margin: 0;
+    }
+    .abouts img{
+      width: 300px;
+      height: 300px;
+    }
+    .abouts p{
+      font-size: 20px;
+    }
+    .achives{
+      display: flex;
+      flex-direction: column;
+    }
+    .mnachv h1{
+      font-size: 60px;
+    }
+
+    .solutions .slid img {
+      width: -webkit-fill-available;
+      height: -webkit-fill-available;
+  }
+  #reviewbtn img,.btnimgs{
+    width: 35px;
+  }
+  .fvission p,.fmission p{
+    font-size: 18px;
+  }
+  .fvission,.fmission{
+    margin-top: 0;
+  }
+  .review .rew .smrew {
+    width: 300px;
+    height: 300px;
+  }
+  .review .rew p{
+    font-size: 15px;
+  }
+  span{
+    width: 15px;
+    height: 15px;
+  }
 }
 
 
